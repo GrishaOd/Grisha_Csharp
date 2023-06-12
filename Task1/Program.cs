@@ -9,13 +9,17 @@ double a = double.Parse(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 double b = double.Parse(Console.ReadLine());
 double max = 0;
+double min = 0;
 if (a > b)
 {
     max = a;
+    min = b;
 }   
 else 
 {
     max = b;
+    min = a;
 }   
-Console.WriteLine($"Максимальное число: {max}");
+Console.WriteLine($"Большее число: {max}");
+Console.WriteLine($"Меньшее число: {min}");
 
