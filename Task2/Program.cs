@@ -10,23 +10,15 @@ double b = double.Parse(Console.ReadLine());
 Console.WriteLine("Введите третье число: ");
 double d = double.Parse(Console.ReadLine());
 
-double max = 0;
-if (a > b)
+double max = a;
+if (b > max)
 {
-    if (a > d)
-    {
-        max = a;
-    }
+    max = b;
 }   
-else if (b > d)
+
+if (d > max)
 {
-    if (b > a)
-    {
-        max = b;
-    }
+   max = d;
 }
-else
-{
-    max = d;
-}   
+  
 Console.WriteLine($"Максимальное число: {max}");
